@@ -55,6 +55,7 @@ export const FormRegister = () => {
     };
 
     return (
+        // para el commit 
         <div className="form">
             <h1 className='text-black font-bold'>REGISTRARSE</h1>
 

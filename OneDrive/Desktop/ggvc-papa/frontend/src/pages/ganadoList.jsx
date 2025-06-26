@@ -1,64 +1,3 @@
-// import { useState } from 'react'
-
-// import { HeaderSearch } from '../components/header.jsx'
-// import { ItemsList } from '../components/Items.jsx';
-// import { TablaAnimal } from '../components/Tablas.jsx';
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// import './ganadoList.css'
-// import { faBaby, faCheckCircle, faCow, faPersonPregnant, faPlus, faSlidersH, faStethoscope } from '@fortawesome/free-solid-svg-icons';
-
-
-// function GanadoListPage() {
-
-//     const [count, setCount] = useState(0)
-
-//     return (
-//         <>
-//             <div className="ganado-list-page">
-//                 <HeaderSearch />
-//                 <div className="ganado-list-content">
-//                     <div className="continer-list">
-//                         <div className="icons w-[90%] h-[70%] flex justify-between">
-//                             <div className="add"><FontAwesomeIcon icon={faPlus}/></div>
-//                             <FontAwesomeIcon icon={faSlidersH} className="text-black text-2xl mt-10 cursor-pointer" />
-//                         </div>
-//                         <div className="list">
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"Princesa"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faBaby} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"Thor"} potrero={"01"} genero={'M'} iconoS={<FontAwesomeIcon icon={faStethoscope} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"Clara"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faPersonPregnant} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"01234"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faBaby} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"Lola"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faStethoscope} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"Pinto"} potrero={"01"} genero={'M'} iconoS={<FontAwesomeIcon icon={faCheckCircle} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"01458"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faBaby} />} />
-//                             <ItemsList iconoA={<FontAwesomeIcon icon={faCow} />} nombre={"86311"} potrero={"01"} genero={'H'} iconoS={<FontAwesomeIcon icon={faBaby} />} />
-//                         </div>
-//                     </div>
-
-//                     <div className="list-info">
-//                         <TablaAnimal nombre={"Princesa"} id={"01"}
-//                         numeros={"01/03"}
-//                         iconS={<FontAwesomeIcon icon={faBaby}/>}
-//                         fecha={"01/03/2016"}
-//                         edad={"9a 10m 27d"}
-//                         sexo={"H"}
-//                         raza={"Holstein"}
-//                         madre={"Lola"}
-//                         padre={"Lolito"}
-//                         desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-//                         rebanoAc={"01"}
-//                         rebanoAn={"02"}
-//                         />
-//                     </div>
-//                 </div>
-//             </div>
-//         </>
-//     )
-// }
-
-// export default GanadoListPage
-
 import { useState } from 'react';
 
 import { HeaderSearch } from '../components/header.jsx';
@@ -90,7 +29,7 @@ function GanadoListPage() {
 
     return (
         <>
-            <div className="ganado-list-page">
+            <div className="ganado-list-page ">
                 <HeaderSearch img={"/img/Ganado-bovino.jpeg"}/>
                 <div className="ganado-list-content">
                     <div className="continer-list">

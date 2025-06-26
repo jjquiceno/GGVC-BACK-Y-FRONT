@@ -1,15 +1,11 @@
-:root{
-    background-color: white;
-}
-.contenedor{
+/* .contenedor{
     width: 100%;
-    height: 30vh;
     background: linear-gradient(180deg, #565a49, #e9edc9);
     position: absolute; 
     top: 0;
     left: 0;
     z-index: 1000;
-}
+} */
 
 
 .img-container{

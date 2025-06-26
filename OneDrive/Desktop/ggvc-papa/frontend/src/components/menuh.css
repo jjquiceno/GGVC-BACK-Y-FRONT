@@ -89,3 +89,13 @@
     right: 0;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.342);
 }
+
+@media screen and (max-width: 768px){
+    .menu-float{
+        width: 50vw;
+        left: -50vw;
+    }
+    .menuOpen{
+        left: 0;
+    }
+}

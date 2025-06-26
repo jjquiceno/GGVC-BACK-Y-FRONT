@@ -9,6 +9,7 @@ import CultivosPage from './pages/cultivos.jsx';
 import InventarioPage from './pages/inventarioPage.jsx';
 import GanadoPage from './pages/ganado.jsx';
 import RegisterPage from './pages/register.jsx';
+import GanadoListPage from './pages/ganadoList.jsx';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/ganado" element={<GanadoPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
+        <Route path="/ganadoList" element={<GanadoListPage/>}/>
       </Routes>
     </div>
   );

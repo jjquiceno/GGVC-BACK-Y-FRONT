@@ -21,7 +21,7 @@
     display: inline-block;
 }
 
-form .input-icon input{
+form .input-icon input, select{
     height: 35px;
     width: 35vw;
     background-color: #fffdef;

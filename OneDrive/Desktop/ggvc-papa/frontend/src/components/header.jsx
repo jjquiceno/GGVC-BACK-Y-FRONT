@@ -10,14 +10,14 @@ import { InputSearch } from './inputs.jsx'
 export const Header = ({nav, text, img}) => {
   return (
     <>
-      <div className='contenedor text-black flex justify-between items-center'>
+      <div className='w-full bg-gradient-to-b from-[#565a49] to-[#e9edc9] absolute top-0 left-0 z-10 h-[20vh] xl:h-[30vh] rounded-bl-[40px] rounded-br-[40px] ext-black flex justify-start gap-8 items-center'>
         <div className=''>
           {nav}
         </div>
         <div className=''>
           <h1 className='text-3xl font-bold'>{text}</h1>
         </div>
-        <div className="img-container" style={{ backgroundImage: `url(${img})`}} >
+        <div className="img-container hidden md:block sm:block " style={{ backgroundImage: `url(${img})`}} >
           <div className='imagen'>
 
           </div>

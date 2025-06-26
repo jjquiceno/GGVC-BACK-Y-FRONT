@@ -11,21 +11,20 @@ export const FormRegister = () => {
     const [email, setEmail] = useState('');
     const [usuario, setUsuario] = useState('');
     const [contrasena, setContrasena] = useState('');
+    const [rol, setRol] = useState('');
+    const [telefono, setTelefono] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        
-        const telefono_ejemplo = '1234567890'; // Teléfono de ejemplo
-        const rol_defecto = 'cliente'; // Rol por defecto
 
         const formData = {
             id: idPersona,
             nombre_empleado: nombre,
             email_empleado: email,
-            telefono_empleado: telefono_ejemplo,
+            telefono_empleado: telefono,
             usuario: usuario,
             contrasena: contrasena,
-            rol: rol_defecto,
+            rol: rol,
         };
 
         try {
@@ -92,6 +91,26 @@ export const FormRegister = () => {
                 <div className="input-icon">
                     <input type="text" id="usuario" placeholder="Usuario" required value={usuario}
                         onChange={(e) => setUsuario(e.target.value)} />
+                    <FontAwesomeIcon icon={faUser} className="icon" />
+                </div>
+
+                <br /><br />
+                <div className="input-icon">
+                    {/* <input type="text" id="rol" placeholder="Rol" required value={rol}
+                        onChange={(e) => setRol(e.target.value)} /> */}
+                    <select id="rol" required value={rol}
+                        onChange={(e) => setRol(e.target.value)}>
+                        <option value="">Seleccione un rol</option>
+                        <option value="admin">Administrador</option>
+                        <option value="empleado">Empleado</option>
+                    </select>
+                    <FontAwesomeIcon icon={faUser} className="icon" />
+                </div>
+
+                <br /><br />
+                <div className="input-icon">
+                    <input type="text" id="telefono" placeholder="Telefono" required value={telefono}
+                        onChange={(e) => setTelefono(e.target.value)} />
                     <FontAwesomeIcon icon={faUser} className="icon" />
                 </div>
 

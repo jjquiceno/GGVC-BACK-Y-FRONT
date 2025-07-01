@@ -28,7 +28,7 @@ export const FormRegister = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:3000/api/usuario', { // Reemplaza con la URL de tu backend
+            const response = await fetch('http://localhost:3000/api/usuario/register', { // Reemplaza con la URL de tu backend
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export const FormRegister = () => {
             if (response.ok) {
                 console.log('Registro exitoso:', data);
                 alert('¡Registro exitoso! Ya puedes iniciar sesión.');
-                // Opcional: Redirigir al usuario a la página de inicio de sesión
+                // Redirige al usuario a la página de inicio de sesión
                 window.location.href = '/';
             } else {
                 console.error('Error en el registro:', data.message);
@@ -124,7 +124,7 @@ export const FormRegister = () => {
 
                 <br /><br />
 
-                <button className='boton-register' type="submit"><a href="">Registrarse</a></button>
+                <button className='boton-register' type="submit">Registrarse</button>
             </form>
 
             <br /><br />
